@@ -10,7 +10,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	name, err:= os.Hostname()
 	if len(response) == 0 {
-		response = "Hello OpenShift for Developers from host : "
+		response = "Hello World from host : "
 	}
 
 	if err != nil {

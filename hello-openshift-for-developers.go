@@ -8,8 +8,8 @@ import (
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
+	name, err := os.Hostname()
 	if len(response) == 0 {
-		name, err := os.Hostname()
 		response = "Hello OpenShift for Developers from host : "
 	}
 

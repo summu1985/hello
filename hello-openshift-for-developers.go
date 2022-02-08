@@ -9,10 +9,11 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = "Hello OpenShift for Developers!"
+		name, err := os.Hostname()
+		response = "Hello OpenShift for Developers from host : "
 	}
 
-	fmt.Fprintln(w, response)
+	fmt.Fprintln(w, response, name)
 	fmt.Println("Servicing an impatient beginner's request.")
 }
 

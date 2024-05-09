@@ -9,7 +9,7 @@ You can deploy this application on OpenShift using the following command:
 oc new-app golang~https://github.com/openshift-for-developers/hello.git
 ```
 
-Note: this example app is derived from the [example at sclorg/golang-ex](https://github.com/sclorg/golang-ex).
+Note: this example app is derived from the [example at sclorg/golang-ex](https://github.com/summu1985/hello.git).
 
 The response message can be set by using the RESPONSE environment
 variable.  You will need to edit the pod definition and add an

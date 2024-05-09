@@ -6,7 +6,7 @@ intended to be build and used with the [Golang Source-to-Image builder image](ht
 You can deploy this application on OpenShift using the following command:
 
 ```shell
-oc new-app golang~https://github.com/openshift-for-developers/hello.git
+oc new-app golang~https://github.com/summu1985/hello.git
 ```
 
 Note: this example app is derived from the [example at sclorg/golang-ex](https://github.com/summu1985/hello.git).
